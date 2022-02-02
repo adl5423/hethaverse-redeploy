@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,13 +21,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <>
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
 
-        </header>
-        <p>{this.state.apiResponse}</p>
-      </div>
+          </header>
+          <p>{this.state.apiResponse}</p>
+        </div>
+      </>
     );
   }
 }
