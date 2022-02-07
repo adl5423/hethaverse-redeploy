@@ -1,0 +1,153 @@
+@import "./src/assets/index.scss";
+
+.navbar {
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.top-bar {
+    background: $primary-one;
+    height: 168px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.top-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.top-bar-logo {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    svg {
+        fill: $white;
+        height: 165px;
+        width: 41px;
+    }
+}
+
+.top-bar-logo-text {
+    font-family: "Share Tech";
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.menu-icon {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    transform: translate(-100%, 60%);
+    cursor: pointer;
+}
+
+.fa-times {
+    color: $white;
+    font-size: 3rem;
+}
+
+.fa-bars {
+    color: $white;
+    font-size: 2.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    top: 168px;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    list-style-type: none;
+    border-bottom: 1px solid $white;
+    padding: 10px 0 10px 0;
+}
+
+.nav-menu.active {
+    background: $primary-two;
+    right: -20px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.nav-links {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Share Tech";
+    text-transform: uppercase;
+    color: $white;
+}
+
+.nav-links:hover {
+    color: $primary-one;
+    border-radius: 0;
+    transition: 250ms;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.horizontal {
+    color: $white;
+    width: 50%;
+    position: relative;
+    left: 10px;
+    fill: $white;
+}
+
+ul {
+    margin-left: 0 auto;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+
+.sub-nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    top: 168px;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    list-style-type: none;
+    border-bottom: 1px solid $white;
+    padding: 10px 0 10px 0;
+}
+
+.sub-nav-menu.active {
+    background: $primary-two;
+    right: -100px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
