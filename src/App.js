@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Topbar from './components/Topbar.js';
+import Homepage from './components/pages/Homepage.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -23,11 +24,10 @@ class App extends React.Component {
     return (
       <>
         <Router>
-          <Topbar>
-            <Routes>
-              <Route path='/' exact />
-            </Routes>
-          </Topbar>
+          <Topbar />
+          <Routes>
+            <Route path='/' element={<Homepage />} />
+          </Routes>
         </Router>
       </>
     );

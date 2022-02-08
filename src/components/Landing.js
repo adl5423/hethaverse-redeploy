@@ -5,7 +5,7 @@ function Landing() {
     return (
         <>
             <div className="home-container">
-                <div className="">
+                <div className="main-container">
 
                 </div>
             </div>

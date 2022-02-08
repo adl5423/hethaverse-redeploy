@@ -1,0 +1,12 @@
+@import "./src/assets/index.scss";
+
+.home-container {
+    background-color: grey;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
