@@ -1,0 +1,75 @@
+@import "./src/assets/index.scss";
+
+.footer-container {
+    height: 140px;
+    background: $primary-one;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    z-index: 999;
+}
+
+.copyright-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+.footer-logo {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    svg {
+        fill: $white;
+        height: 150px;
+        width: 30px;
+    }
+}
+
+.copyright-message {
+    font-family: "Share Tech";
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 50px;
+    margin-block-end: 0;
+}
+
+.footer-pages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-item {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.foot-links {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Share Tech";
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+}
+
+.foot-links:hover {
+    color: $primary-two;
+    border-radius: 0;
+    transition: 250ms;
+    font-size: 20px;
+    text-decoration: underline;
+}

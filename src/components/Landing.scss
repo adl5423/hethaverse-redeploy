@@ -1,12 +1,122 @@
 @import "./src/assets/index.scss";
 
 .home-container {
-    background-color: grey;
-    height: 100vh;
-    width: 100%;
+    background: linear-gradient(-132deg, $third, $fourth, $five);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    overflow: hidden;
+    max-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     object-fit: contain;
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.doctor {
+    max-width: 30%;
+    position: relative;
+    top: 20px;
+    right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 125px;
+    z-index: 1;
+}
+
+.financial-advisor {
+    max-width: 50%;
+    min-width: 45%;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    padding-left: 30px;
+}
+
+.landing-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 40px;
+}
+
+.landing-logo {
+    padding-right: 5px;
+
+    svg {
+        fill: $white;
+        height: 180px;
+        width: 45px;
+    }
+}
+
+.landing-logo-text {
+    font-family: "Share Tech";
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 52px;
+}
+
+.center-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.healthcare {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 84px;
+    position: relative;
+    right: 250px;
+}
+
+.wealthcare {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 84px;
+    text-align: right;
+    position: relative;
+    left: 175px;
+}
+
+.slogan {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+h1,
+h2 {
+    margin: 0;
 }

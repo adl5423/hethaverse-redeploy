@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Topbar from './components/Topbar.js';
+import Footer from './components/Footer.js';
 import Homepage from './components/pages/Homepage.js';
 
 class App extends React.Component {
@@ -28,6 +29,7 @@ class App extends React.Component {
           <Routes>
             <Route path='/' element={<Homepage />} />
           </Routes>
+          <Footer />
         </Router>
       </>
     );

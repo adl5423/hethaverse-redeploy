@@ -77,7 +77,7 @@
 .nav-menu {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     position: absolute;
     top: 168px;
     right: -100%;
@@ -102,7 +102,7 @@
     width: 100%;
     display: table;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Share Tech";
     text-transform: uppercase;
     color: $white;
@@ -112,7 +112,7 @@
     color: $primary-one;
     border-radius: 0;
     transition: 250ms;
-    font-size: 26px;
+    font-size: 22px;
     text-decoration: underline;
 }
 
@@ -130,24 +130,8 @@ ul {
     padding-inline-start: 0;
 }
 
-.sub-nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    position: absolute;
-    top: 168px;
-    right: -100%;
-    opacity: 0;
-    transition: all 0.5s ease;
-    list-style-type: none;
-    border-bottom: 1px solid $white;
-    padding: 10px 0 10px 0;
-}
-
-.sub-nav-menu.active {
-    background: $primary-two;
-    right: -100px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
 }
