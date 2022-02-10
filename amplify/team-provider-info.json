@@ -1,0 +1,29 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-hethaverse-dev-164602-authRole",
+            "UnauthRoleArn": "arn:aws:iam::642620708168:role/amplify-hethaverse-dev-164602-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::642620708168:role/amplify-hethaverse-dev-164602-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-hethaverse-dev-164602-deployment",
+            "UnauthRoleName": "amplify-hethaverse-dev-164602-unauthRole",
+            "StackName": "amplify-hethaverse-dev-164602",
+            "StackId": "arn:aws:cloudformation:us-east-1:642620708168:stack/amplify-hethaverse-dev-164602/af5f8840-89f1-11ec-bf9d-0acbdb1b6243",
+            "AmplifyAppId": "d8t5lprris7n7"
+        },
+        "categories": {
+            "function": {
+                "AuthorHandling": {
+                    "deploymentBucketName": "amplify-hethaverse-dev-164602-deployment",
+                    "s3Key": "amplify-builds/AuthorHandling-5367665a54744c314c6b-build.zip"
+                }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d8t5lprris7n7",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}
