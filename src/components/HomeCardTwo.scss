@@ -1,0 +1,53 @@
+@import "./src/assets/index.scss";
+
+.card-two-container {
+    overflow: hidden;
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.photo-section {
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.telehealth {
+    object-fit: fill;
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    min-width: 50vw;
+}
+
+.card-two-title {
+    font-family: "Share Tech";
+    color: $black;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.card-two-desc {
+    font-family: "Share Tech";
+    color: $black;
+    font-size: 26px;
+    text-align: right;
+    padding: 15px 50px 0 50px;
+}

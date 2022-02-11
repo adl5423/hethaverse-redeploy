@@ -1,0 +1,54 @@
+@import "./src/assets/index.scss";
+
+.card-six-container {
+    overflow: hidden;
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.six-photo-section {
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.educating {
+    object-fit: fill;
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+}
+
+.four-six-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    min-width: 50vw;
+}
+
+.card-six-title {
+    font-family: "Share Tech";
+    color: $black;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+}
+
+.card-six-desc {
+    font-family: "Share Tech";
+    color: $black;
+    font-size: 26px;
+    text-align: right;
+    padding: 15px 50px 0 50px;
+}
