@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HomeCardFive.scss';
 import Security from './images/security.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function HomeCardFive() {
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, []);
     return (
         <>
-            <div className="card-five-container">
+            <div data-aos="fade-up" data-aos-once="true" className="card-five-container">
                 <div className="five-text-section">
                     <h2 className="card-five-title">
                         Plan your Wealth, Protect your Family

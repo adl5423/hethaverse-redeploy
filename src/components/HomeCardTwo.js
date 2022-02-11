@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HomeCardTwo.scss';
 import Telehealth from './images/tele-health.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function HomeCardTwo() {
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, []);
     return (
         <>
-            <div className="card-two-container">
+            <div data-aos="fade-up" data-aos-once="true" className="card-two-container">
                 <div className="photo-section">
                     <img src={Telehealth} alt="tele-health.jpeg" className="telehealth" />
                 </div>

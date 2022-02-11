@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HomeCardSix.scss';
 import Educating from './images/educating.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function HomeCardSix() {
+    useEffect(() => {
+        Aos.init({ duration: 500 });
+    }, []);
     return (
         <>
-            <div className="card-six-container">
+            <div data-aos="fade-up" data-aos-once="true" className="card-six-container">
                 <div className="six-photo-section">
                     <img src={Educating} alt="educating.jpeg" className="educating" />
                 </div>
