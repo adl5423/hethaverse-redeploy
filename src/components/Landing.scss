@@ -7,10 +7,10 @@
     overflow: hidden;
     max-height: 80vh;
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     justify-content: center;
     align-items: center;
-    object-fit: contain;
+    //object-fit: contain;
 
     @keyframes Gradient {
         0% {
@@ -33,34 +33,35 @@
 }
 
 .doctor {
-    max-width: 30%;
+    width: 100%;
     position: relative;
-    top: 20px;
-    right: 10px;
+    //top: 20px;
+    //right: 10px;
     display: flex;
     flex-wrap: wrap;
-    padding-right: 125px;
     z-index: 1;
+    //padding-right: 125px;
 }
 
 .financial-advisor {
-    max-width: 50%;
-    min-width: 45%;
+    width: 100%;
+    //min-width: 45%;
     position: relative;
-    top: 10px;
+    top: 15px;
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
-    padding-left: 30px;
+    //padding-left: 30px;
 }
 
 .landing-info {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     position: relative;
-    top: 40px;
-    padding-right: 60px;
+    //top: 40px;
+    //padding-right: 60px;
 }
 
 .landing-logo {
@@ -92,9 +93,10 @@
     font-family: "Share Tech";
     color: $white;
     text-transform: uppercase;
-    font-size: 84px;
+    font-size: 80px;
     position: relative;
-    right: 260px;
+    bottom: 25px;
+    right: 150px;
     animation: fadeIn 1s;
 
     @keyframes fadeIn {
@@ -114,10 +116,11 @@
     font-family: "Share Tech";
     color: $white;
     text-transform: uppercase;
-    font-size: 84px;
+    font-size: 80px;
     text-align: right;
     position: relative;
-    left: 165px;
+    top: 25px;
+    left: 150px;
     animation: fadeIn 2s;
 
     @keyframes fadeIn {
@@ -140,8 +143,8 @@
     font-size: 28px;
     text-align: center;
     position: relative;
-    top: 40px;
-    padding-right: 60px;
+    //top: 40px;
+    //padding-right: 60px;
     animation: fadeIn 3s;
 
     @keyframes fadeIn {
@@ -157,7 +160,228 @@
     }
 }
 
+.superior-info {
+    position: relative;
+    bottom: 25px;
+}
+
+.inferior-info {
+    position: relative;
+    top: 75px;
+}
+
 h1,
 h2 {
     margin: 0;
+}
+
+@media screen and (min-width: 1760px) {
+    .doctor {
+        padding-right: 260px;
+    }
+
+    .financial-advisor {
+        padding-left: 260px;
+    }
+
+    .healthcare {
+        right: 300px;
+    }
+
+    .wealthcare {
+        left: 250px;
+    }
+}
+
+@media screen and (max-width: 1759px) {
+    .doctor {
+        padding-right: 40px;
+    }
+
+    .financial-advisor {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .healthcare {
+        font-size: 60px;
+    }
+
+    .wealthcare {
+        font-size: 60px;
+        left: 170px;
+    }
+
+    .slogan {
+        font-size: 22px;
+    }
+
+    .landing-logo {
+        svg {
+            fill: $white;
+            height: 90px;
+            width: 30px;
+        }
+    }
+
+    .landing-logo-text {
+        font-size: 30px;
+    }
+
+    .doctor {
+        padding-right: 0;
+    }
+
+    .financial-advisor {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1196px) {
+    .healthcare {
+        font-size: 50px;
+        right: 130px;
+    }
+
+    .wealthcare {
+        font-size: 50px;
+        left: 150px;
+    }
+
+    .slogan {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1092px) {
+    .healthcare {
+        font-size: 45px;
+    }
+
+    .wealthcare {
+        font-size: 45px;
+    }
+
+    .slogan {
+        font-size: 14px;
+    }
+
+    .landing-logo-text {
+        font-size: 20px;
+    }
+
+    .inferior-info {
+        top: 55px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .doctor,
+    .financial-advisor {
+        width: 30%;
+    }
+
+    .healthcare {
+        right: 100px;
+        top: 30px;
+    }
+
+    .wealthcare {
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .superior-info {
+        bottom: 0;
+    }
+
+    .inferior-info {
+        top: 50px;
+    }
+
+    .healthcare {
+        font-size: 30px;
+        top: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .wealthcare {
+        font-size: 30px;
+        top: none;
+        left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .healthcare {
+        font-size: 25px;
+        bottom: 5px;
+    }
+
+    .wealthcare {
+        font-size: 25px;
+        top: 5px;
+    }
+
+    .slogan {
+        font-size: 12px;
+        top: 0;
+    }
+
+    .superior-info {
+        top: 10px;
+    }
+
+    .inferior-info {
+        top: 35px;
+    }
+
+    .landing-logo {
+        svg {
+            fill: $white;
+            height: 70px;
+            width: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .landing-logo {
+        svg {
+            fill: $white;
+            height: 65px;
+            width: 15px;
+        }
+    }
+
+    .healthcare,
+    .wealthcare {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    .healthcare,
+    .wealthcare {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .healthcare,
+    .wealthcare {
+        font-size: 12px;
+    }
+
+    .slogan {
+        font-size: 8px;
+    }
+
+    .inferior-info {
+        top: 25px;
+    }
 }

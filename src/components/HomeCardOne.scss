@@ -3,7 +3,7 @@
 .card-one-container {
     width: 100%;
     overflow: hidden;
-    height: 40vh;
+    max-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,8 +14,9 @@
 
 .plexus {
     background-position: top;
-    object-fit: fill;
+    object-fit: cover;
     z-index: -1;
+    width: 100%;
 }
 
 .card-one-header {
@@ -27,4 +28,16 @@
     position: absolute;
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1196px) {
+    .card-one-header {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    .card-one-header {
+        font-size: 36px;
+    }
 }

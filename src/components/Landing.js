@@ -11,22 +11,26 @@ function Landing() {
                 <div className="main-container">
                     <img src={Doctor} alt="doctor.png" className="doctor" />
                     <div className="center-info">
-                        <h1 className="healthcare">
-                            Prioritizing Healthcare
-                        </h1>
-                        <h1 className="wealthcare">
-                            Protecting Wealthcare
-                        </h1>
-                        <h2 className="slogan">
-                            Powered by today's technology
-                        </h2>
-                        <div className="landing-info">
-                            <div className="landing-logo">
-                                <Logo />
-                            </div>
-                            <h1 className="landing-logo-text">
-                                Hethaverse
+                        <div className="superior-info">
+                            <h1 className="healthcare">
+                                Prioritizing Healthcare
                             </h1>
+                            <h1 className="wealthcare">
+                                Protecting Wealthcare
+                            </h1>
+                        </div>
+                        <div className="inferior-info">
+                            <h2 className="slogan">
+                                Powered by today's technology
+                            </h2>
+                            <div className="landing-info">
+                                <div className="landing-logo">
+                                    <Logo />
+                                </div>
+                                <h1 className="landing-logo-text">
+                                    Hethaverse
+                                </h1>
+                            </div>
                         </div>
                     </div>
                     <img src={Financial} alt="financial-advisor.png" className="financial-advisor" />

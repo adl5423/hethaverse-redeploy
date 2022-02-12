@@ -135,3 +135,30 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+@media screen and (max-width: 496px) {
+    .top-bar-logo {
+        svg {
+            fill: $white;
+            height: 145px;
+            width: 20px;
+        }
+    }
+
+    .top-bar-logo-text {
+        font-size: 32px;
+    }
+
+    .navbar,
+    .top-bar {
+        height: 125px;
+    }
+
+    .menu-icon {
+        top: 15px;
+    }
+
+    .logo-section {
+        padding-left: 25px;
+    }
+}
