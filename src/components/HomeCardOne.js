@@ -14,7 +14,7 @@ function HomeCardOne() {
                 <h1 className="card-one-header">
                     We have no limits
                 </h1>
-                <video className="plexus" autoPlay loop muted>
+                <video className="plexus" playsinline autoPlay loop muted>
                     <source src={Plexus} type="video/mp4" />
                 </video>
             </div>
