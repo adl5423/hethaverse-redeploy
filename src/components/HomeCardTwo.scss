@@ -8,24 +8,25 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    object-fit: contain;
 }
 
 .photo-section {
-    height: 60vh;
-    width: 50vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-size: cover;
 }
 
 .telehealth {
     object-fit: fill;
-    width: 50vw;
+    width: 100%;
     height: 60vh;
     position: relative;
     z-index: -1;
     display: flex;
     align-items: center;
+    background-size: cover;
 }
 
 .text-section {
@@ -33,15 +34,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
-    min-width: 50vw;
+    height: 60vh;
+    width: 100%;
 }
 
 .card-two-title {
     font-family: "Share Tech";
     color: $black;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .card-two-desc {
@@ -49,5 +50,33 @@
     color: $black;
     font-size: 26px;
     text-align: right;
-    padding: 15px 50px 0 50px;
+    padding: 15px 100px 0 100px;
+}
+
+@media screen and (max-width: 960px) {
+    .card-two-container {
+        flex-direction: column;
+    }
+
+    .card-two-desc {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .photo-section,
+    .telehealth {
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .card-two-title {
+        font-size: 20px;
+    }
+
+    .card-two-desc {
+        font-size: 12px;
+    }
 }

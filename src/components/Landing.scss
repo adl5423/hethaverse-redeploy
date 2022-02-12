@@ -30,28 +30,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .doctor {
     width: 100%;
     position: relative;
-    //top: 20px;
-    //right: 10px;
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
-    //padding-right: 125px;
 }
 
 .financial-advisor {
     width: 100%;
-    //min-width: 45%;
     position: relative;
     top: 15px;
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
-    //padding-left: 30px;
 }
 
 .landing-info {
@@ -60,8 +56,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    //top: 40px;
-    //padding-right: 60px;
 }
 
 .landing-logo {
@@ -143,8 +137,6 @@
     font-size: 28px;
     text-align: center;
     position: relative;
-    //top: 40px;
-    //padding-right: 60px;
     animation: fadeIn 3s;
 
     @keyframes fadeIn {

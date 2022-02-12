@@ -24,8 +24,8 @@
 
     svg {
         fill: $white;
-        height: 150px;
-        width: 30px;
+        height: 140px;
+        width: 25px;
     }
 }
 
@@ -72,4 +72,35 @@
     transition: 250ms;
     font-size: 20px;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 960px) {
+    .foot-links,
+    .copyright-message {
+        font-size: 10px;
+    }
+
+    .foot-links:hover {
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        svg {
+            fill: $white;
+            height: 120px;
+            width: 20px;
+        }
+    }
+
+    .footer-container {
+        height: 110px;
+    }
+
+    .copyright-section {
+        padding-left: 20px;
+    }
+
+    .footer-menu {
+        padding-right: 20px;
+    }
 }

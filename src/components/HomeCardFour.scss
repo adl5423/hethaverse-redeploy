@@ -12,15 +12,16 @@
 }
 
 .four-photo-section {
-    height: 60vh;
-    width: 50vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background-size: cover;
 }
 
 .blockchain {
     object-fit: fill;
-    width: 50vw;
+    width: 100%;
     height: 60vh;
     position: relative;
     z-index: -1;
@@ -33,15 +34,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
-    min-width: 50vw;
+    height: 60vh;
+    width: 100%;
 }
 
 .card-four-title {
     font-family: "Share Tech";
     color: $black;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .card-four-desc {
@@ -49,5 +50,33 @@
     color: $black;
     font-size: 26px;
     text-align: right;
-    padding: 15px 50px 0 50px;
+    padding: 15px 100px 0 100px;
+}
+
+@media screen and (max-width: 960px) {
+    .card-four-container {
+        flex-direction: column;
+    }
+
+    .card-four-desc {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .four-photo-section,
+    .blockchain {
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .card-four-title {
+        font-size: 20px;
+    }
+
+    .card-four-desc {
+        font-size: 12px;
+    }
 }
