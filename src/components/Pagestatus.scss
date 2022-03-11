@@ -1,0 +1,34 @@
+@import "./src/assets/index.scss";
+
+.page-status-container {
+    width: 100%;
+    overflow: hidden;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    background-color: $primary-two;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+.status-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.status-title {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.status-desc {
+    font-family: "Share Tech";
+    color: $white;
+    font-size: 20px;
+}

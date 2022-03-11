@@ -6,6 +6,7 @@ import HomeCardThree from '../HomeCardThree';
 import HomeCardFour from '../HomeCardFour';
 import HomeCardFive from '../HomeCardFive';
 import HomeCardSix from '../HomeCardSix';
+import Pagestatus from '../Pagestatus';
 
 function Homepage() {
     return (
@@ -18,6 +19,7 @@ function Homepage() {
                 <HomeCardFour />
                 <HomeCardFive />
                 <HomeCardSix />
+                <Pagestatus />
             </div>
         </>
     );

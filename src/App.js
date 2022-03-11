@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Topbar from './components/Topbar.js';
 import Footer from './components/Footer.js';
 import Homepage from './components/pages/Homepage.js';
+import Aboutus from './components/pages/Aboutus.js';
+import Scroller from './components/Scroller';
 
 class App extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = { apiResponse: " " };
@@ -22,12 +25,15 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
       <>
         <Router>
+          <Scroller />
           <Topbar />
           <Routes>
             <Route path='/' element={<Homepage />} />
+            <Route path='/about-us' element={<Aboutus />} />
           </Routes>
           <Footer />
         </Router>

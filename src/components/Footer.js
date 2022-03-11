@@ -18,6 +18,11 @@ function Footer() {
                 <div className="footer-pages">
                     <ul className="footer-menu">
                         <li className="foot-item">
+                            <Link to='/about-us' className='foot-links'>
+                                About Us
+                            </Link>
+                        </li>
+                        <li className="foot-item">
                             <Link to='/privacy-and-legal' className='foot-links'>
                                 Privacy and Legal
                             </Link>
