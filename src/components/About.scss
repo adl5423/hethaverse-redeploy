@@ -1,6 +1,35 @@
 @import "./src/assets/index.scss";
 
-.page-container {
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.our-mission {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 75px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero {
+    max-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.hero-background {
     width: 100%;
-    height: 80vh;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
 }
