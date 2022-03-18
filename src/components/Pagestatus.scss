@@ -36,3 +36,13 @@
     padding-left: 15px;
     padding-right: 15px;
 }
+
+@media screen and (max-width: 696px) {
+    .status-title {
+        font-size: 20px;
+    }
+
+    .status-desc {
+        font-size: 12px;
+    }
+}
