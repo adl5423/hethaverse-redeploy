@@ -26,7 +26,7 @@ function About() {
                 <p className="summary">
                     The Hethaverse is a cutting-edge platform that seamlessly links users with healthcare providers and financial tools to provide high quality, affordably priced care and financial advice.
 
-                    The project's innovative design provides an easy and affordable way for anyone in need of medical services or financial guide via the metaverse without having any difficultly finding nearby appointments or wealth conservation.
+                    The project's innovative design provides an easy and affordable way for anyone in need of medical services or financial guide via the metaverse without having any difficulty finding nearby appointments or wealth conservation.
                 </p>
             </div>
         </>

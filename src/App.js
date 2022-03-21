@@ -5,6 +5,7 @@ import Topbar from './components/Topbar.js';
 import Footer from './components/Footer.js';
 import Homepage from './components/pages/Homepage.js';
 import Aboutus from './components/pages/Aboutus.js';
+import Contact from './components/pages/Contact';
 import Scroller from './components/Scroller';
 
 class App extends React.Component {
@@ -34,6 +35,7 @@ class App extends React.Component {
           <Routes>
             <Route path='/' element={<Homepage />} />
             <Route path='/about-us' element={<Aboutus />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
           <Footer />
         </Router>
