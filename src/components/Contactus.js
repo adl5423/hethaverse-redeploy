@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './Contactus.scss';
 import Cubes from './videos/cubes.mp4';
 import { ReactComponent as Caring } from "./images/caring.svg";
+import Calendar from "./images/calendar-template.png";
+import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -25,6 +27,40 @@ function Contactus() {
                         We know that you are as excited as we are with Hethaverse, and we aim to inform you about our products and goals. Below you can find a calendar to schedule an appointment with us, as well as additional contact information. We hope to hear from you soon!
                     </p>
                     <Caring className="caring" />
+                </div>
+                <div data-aos="fade-up" data-aos-once="true" className="informational-container">
+                    <div className="calendar-section">
+                        <h2 className="calendar-heading">
+                            Appointment Calendar
+                        </h2>
+                        <img src={Calendar} alt="template.png" className="template" />
+                    </div>
+                    <div className="info-contact">
+                        <h1 className="info-title">
+                            Email
+                        </h1>
+                        <p className="info-content">
+                            main@hethaverse.com
+                        </p>
+                        <h1 className="info-title">
+                            Phone Number
+                        </h1>
+                        <p className="info-content">
+                            301.331.3718
+                        </p>
+                        <h1 className="info-title">
+                            Webmaster Email
+                        </h1>
+                        <p className="info-content">
+                            webmaster@hethaverse.com
+                        </p>
+                        <h1 className="info-title">
+                            Webmaster Phone Number
+                        </h1>
+                        <p className="info-content">
+                            304.519.6953
+                        </p>
+                    </div>
                 </div>
             </div>
         </>
