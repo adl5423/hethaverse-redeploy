@@ -45,9 +45,9 @@ function Contactus() {
                         <h1 className="info-title">
                             Phone Number
                         </h1>
-                        <p className="info-content">
+                        <a href="tel:3013313718" className="info-content">
                             301.331.3718
-                        </p>
+                        </a>
                         <h1 className="info-title">
                             Webmaster Email
                         </h1>
@@ -57,9 +57,9 @@ function Contactus() {
                         <h1 className="info-title">
                             Webmaster Phone Number
                         </h1>
-                        <p className="info-content">
+                        <a href="tel:3045196953" className="info-content">
                             304.519.6953
-                        </p>
+                        </a>
                     </div>
                 </div>
             </div>
