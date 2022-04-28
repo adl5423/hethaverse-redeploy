@@ -2,8 +2,8 @@
   "version": "1",
   "cognitoConfig": {
     "identityPoolName": "testAuthIdentityPool",
-    "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "hethav994c2d40",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "hethav75d643ad",
     "userPoolName": "hethaverse",
     "autoVerifiedAttributes": [
       "email"
@@ -30,9 +30,9 @@
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "hethav994c2d40_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "hethav75d643ad_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "994c2d40",
+    "sharedId": "75d643ad",
     "resourceName": "hethaverse",
     "authSelections": "identityPoolAndUserPool",
     "serviceName": "Cognito",
@@ -46,6 +46,20 @@
     "thirdPartyAuth": false,
     "authProviders": [],
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": []
   }
 }

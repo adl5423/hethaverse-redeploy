@@ -1,0 +1,49 @@
+@import "./src/assets/index.scss";
+
+.button {
+    display: inline-flex;
+    height: 30px;
+    width: 140px;
+    border: 2px solid $white;
+    border-radius: 5px;
+    margin: 20px 20px 20px 20px;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "Share Tech";
+
+    a {
+        color: $white;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+}
+
+.button:hover {
+    background-color: white;
+    transition: ease-in-out 250ms;
+    height: 40px;
+    width: 150px;
+
+    a {
+        color: $black;
+        transition: ease-in-out 250ms;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .button {
+        height: 15px;
+        width: 120px;
+    }
+
+    .button:hover {
+        height: 25px;
+        width: 130px;
+    }
+}
