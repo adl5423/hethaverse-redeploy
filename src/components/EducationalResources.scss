@@ -1,0 +1,260 @@
+@import "./src/assets/index.scss";
+
+.educational-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.educational-hero {
+    height: 50vh;
+    background-image: url(./images/all-ages.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    z-index: -1;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+.educational-title {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 75px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+    animation: fadeIn 3s;
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.educational-description {
+    overflow: hidden;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    background-color: $primary-one;
+}
+
+.educational-desc {
+    font-family: "Share Tech";
+    color: $white;
+    font-size: 35px;
+    padding: 0 70px 15px 70px;
+}
+
+.dictionary-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.pills-picture {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.dictionary-description {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-two;
+    align-items: center;
+    justify-content: center;
+}
+
+.dict-title {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.dict-desc {
+    font-family: "Share Tech";
+    color: $white;
+    font-size: 26px;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.hb-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.exercising-picture {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.hb-description {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-one;
+    align-items: center;
+    justify-content: center;
+}
+
+.hb-title {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.hb-desc {
+    font-family: "Share Tech";
+    color: $white;
+    font-size: 26px;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.fb-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.piggy-picture {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fb-description {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-two;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb-title {
+    font-family: "Share Tech";
+    color: $white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.fb-desc {
+    font-family: "Share Tech";
+    color: $white;
+    font-size: 26px;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 960px) {
+    .educational-hero {
+        justify-content: center;
+    }
+
+    .educational-title {
+        text-align: center;
+        font-size: 55px;
+        left: 0%;
+    }
+
+    .educational-description {
+        flex-wrap: wrap;
+    }
+
+    .educational-desc {
+        font-size: 20px;
+    }
+
+    .dictionary-container,
+    .hb-container,
+    .fb-container {
+        flex-direction: column;
+    }
+
+    .dict-title,
+    .hb-title,
+    .fb-title {
+        font-size: 25px;
+    }
+
+    .dict-desc,
+    .hb-desc,
+    .fb-desc {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .pills-picture,
+    .exercising-picture,
+    .piggy-picture {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .dictionary-description,
+    .hb-description,
+    .fb-description {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .dict-title,
+    .hb-title,
+    .fb-title {
+        font-size: 16px;
+    }
+
+    .dict-desc,
+    .hb-desc,
+    .fb-desc {
+        font-size: 12px;
+    }
+}

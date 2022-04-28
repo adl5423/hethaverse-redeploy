@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Topbar from './components/Topbar.js';
@@ -6,6 +6,7 @@ import Footer from './components/Footer.js';
 import Homepage from './components/pages/Homepage.js';
 import Aboutus from './components/pages/Aboutus.js';
 import Contact from './components/pages/Contact';
+import Educational from './components/pages/Educational';
 import Scroller from './components/Scroller';
 
 class App extends React.Component {
@@ -36,6 +37,7 @@ class App extends React.Component {
             <Route path='/' element={<Homepage />} />
             <Route path='/about-us' element={<Aboutus />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/educational' element={<Educational />} />
           </Routes>
           <Footer />
         </Router>

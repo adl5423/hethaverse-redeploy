@@ -15,8 +15,8 @@ function About() {
                 <h1 className="our-mission">
                     We Believe Health and Wealth are the top priorities
                 </h1>
-                <div className="hero">
-                    <img src={Consulting} alt="consulting" className="hero-background" />
+                <div className="about-us-hero">
+                    <img src={Consulting} alt="consulting" className="about-hero-background" />
                 </div>
             </div>
             <div className="summary-container" data-aos="fade-up" data-aos-once="true">
