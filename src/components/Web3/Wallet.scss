@@ -1,0 +1,45 @@
+@import "./src/assets/index.scss";
+
+.wallet-button {
+    width: 200px;
+    height: 70px;
+    color: $white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid $white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.wallet-button-text {
+    text-align: center;
+}
+
+.wallet-button:hover {
+    color: $primary-two;
+    border: 10px solid $primary-two;
+    border-radius: 15px;
+    transition: 200ms ease-in-out;
+}
+
+.wallet-disconnect {
+    width: 200px;
+    height: 70px;
+    color: $white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid $white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.wallet-disconnect:hover {
+    color: $third;
+    border: 10px solid $third;
+    border-radius: 15px;
+    transition: 200ms ease-in-out;
+}

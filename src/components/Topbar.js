@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Topbar.scss';
 import { ReactComponent as Logo } from "./images/HethaverseLogoGraphic.svg";
 import { Link } from 'react-router-dom';
+import Wallet from './Web3/Wallet.js'
 
 function Topbar() {
     const [click, setClick] = useState(false);
@@ -31,7 +32,11 @@ function Topbar() {
                             <h1 className="top-bar-logo-text">
                                 Hethaverse
                             </h1>
+                            <div className="wallet-container">
+                                <Wallet />
+                            </div>
                         </div>
+
                         <div className='menu-icon' onClick={handleClick}>
                             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                         </div>

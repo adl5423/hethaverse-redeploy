@@ -8,6 +8,7 @@ import Aboutus from './components/pages/Aboutus.js';
 import Contact from './components/pages/Contact';
 import Educational from './components/pages/Educational';
 import Scroller from './components/Scroller';
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks';
 
 class App extends React.Component {
 
@@ -28,19 +29,34 @@ class App extends React.Component {
 
   render() {
 
+    const supportedChainIds = [1, 4]
+    const connectors = {
+      injected: {},
+      walletlink: {
+        appName: "hethaverse",
+        url: "/localhost:3001",
+        darkMode: false,
+      }
+    }
+
     return (
       <>
-        <Router>
-          <Scroller />
-          <Topbar />
-          <Routes>
-            <Route path='/' element={<Homepage />} />
-            <Route path='/about-us' element={<Aboutus />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/educational' element={<Educational />} />
-          </Routes>
-          <Footer />
-        </Router>
+        <ThirdwebWeb3Provider
+          supportedChainIds={supportedChainIds}
+          connectors={connectors}
+        >
+          <Router>
+            <Scroller />
+            <Topbar />
+            <Routes>
+              <Route path='/' element={<Homepage />} />
+              <Route path='/about-us' element={<Aboutus />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/educational' element={<Educational />} />
+            </Routes>
+            <Footer />
+          </Router>
+        </ThirdwebWeb3Provider>
       </>
     );
   }
