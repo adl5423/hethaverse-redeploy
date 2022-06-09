@@ -8,7 +8,7 @@ import Aboutus from './components/pages/Aboutus.js';
 import Contact from './components/pages/Contact';
 import Educational from './components/pages/Educational';
 import Scroller from './components/Scroller';
-import { ThirdwebWeb3Provider } from '@3rdweb/hooks';
+import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
 
 class App extends React.Component {
 
@@ -29,21 +29,11 @@ class App extends React.Component {
 
   render() {
 
-    const supportedChainIds = [1, 4]
-    const connectors = {
-      injected: {},
-      walletlink: {
-        appName: "hethaverse",
-        url: "/localhost:3001",
-        darkMode: false,
-      }
-    }
+    const activeChainId = ChainId.Rinkeby;
 
     return (
       <>
-        <ThirdwebWeb3Provider
-          supportedChainIds={supportedChainIds}
-          connectors={connectors}
+        <ThirdwebProvider desiredChainId={activeChainId}
         >
           <Router>
             <Scroller />
@@ -56,7 +46,7 @@ class App extends React.Component {
             </Routes>
             <Footer />
           </Router>
-        </ThirdwebWeb3Provider>
+        </ThirdwebProvider>
       </>
     );
   }

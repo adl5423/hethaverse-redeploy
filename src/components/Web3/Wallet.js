@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
-import { useWeb3 } from '@3rdweb/hooks';
+import { useAddress, useMetamask, useDisconnect } from '@thirdweb-dev/react';
 import './Wallet.scss';
 
 function Wallet() {
-    const { address, connectWallet, disconnectWallet } = useWeb3()
+    const connectWithMetamask = useMetamask()
+    const disconnectWallet = useDisconnect()
+    const address = useAddress()
 
     /* useEffect(() => {
         if (!address) return
@@ -21,16 +23,24 @@ function Wallet() {
     }, [address]) */
 
     return (
-        <div>
-            {!address &&
-                <button onClick={() => connectWallet("injected")} className="wallet-button">
-                    <h2 className="wallet-button-text"> Connect Wallet </h2>
-                </button>}
-            {address && <button onClick={() => disconnectWallet()} className="wallet-disconnect">
-                <h2 className="wallet-button-text"> Disconnect Wallet </h2>
-            </button>}
-        </div>
+        <>
+            <div>
+                {address ? (
+                    <>
+                        <button onClick={disconnectWallet} className="wallet-disconnect">
+                            <h2 className="wallet-button-text"> Disconnect Wallet </h2>
+                        </button>
+                    </>
+                ) : (
+                    <button onClick={connectWithMetamask} className="wallet-button">
+                        <h2 className="wallet-button-text"> Connect Wallet </h2>
+                    </button>
+                )}
+            </div>
+        </>
     )
 }
+
+
 
 export default Wallet
