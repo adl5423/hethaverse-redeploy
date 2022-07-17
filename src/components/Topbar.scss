@@ -136,6 +136,11 @@ body {
     overflow-y: auto;
 }
 
+.wallet-container {
+    display: flex;
+    padding-left: 25px;
+}
+
 @media screen and (max-width: 496px) {
     .top-bar-logo {
         svg {
