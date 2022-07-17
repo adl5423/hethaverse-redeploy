@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import './Contactus.scss';
+import Bookings from './Bookings';
 import Cubes from './videos/cubes.mp4';
 import { ReactComponent as Caring } from "./images/caring.svg";
 import Calendar from "./images/calendar-template.png";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -33,7 +34,10 @@ function Contactus() {
                         <h2 className="calendar-heading">
                             Appointment Calendar
                         </h2>
-                        <img src={Calendar} alt="template.png" className="template" />
+                        <div>
+                            {/* <Bookings /> */}
+                            
+                        </div>
                     </div>
                     <div className="info-contact">
                         <h1 className="info-title">

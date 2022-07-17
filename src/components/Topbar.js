@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Topbar.scss';
 import { ReactComponent as Logo } from "./images/HethaverseLogoGraphic.svg";
 import { Link } from 'react-router-dom';
