@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useAddress, useMetamask, useDisconnect } from '@thirdweb-dev/react';
 import './Wallet.scss';
 

@@ -24,7 +24,7 @@ function EducationalResources() {
             </div>
             <div data-aos="fade-up" data-aos-once="true" className="educational-description">
                 <p className="educational-desc">
-                    We provide various resources and tools that will help you make the best decisions for your health and wealth. Our resources are 100% made by professionals and experts in the matter, and can be contacted upon request for additional inquires. Click any of the buttons below to access your desired resource.
+                    We provide various resources and tools that will help you make the best decisions for your health and wealth. Our resources are 100% made by professionals and experts in the matter, and can be contacted upon request for additional inquires. Click any of the buttons below to access the resource.
                 </p>
             </div>
 
